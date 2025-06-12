@@ -22,7 +22,7 @@ const Home: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [appId, setAppId] = useState<bigint>(BigInt(0));
   const [assetId, setAssetId] = useState<bigint>(0n);
-  const [price, setprice] = useState<bigint>(0n);
+  const [price, setPrice] = useState<bigint>(0n);
   const [newPrice, setnewPrice] = useState<bigint>(0n);
   const [assetname, setassetname] = useState<string>("");
   const [manager, setmanger] = useState<string>("");
