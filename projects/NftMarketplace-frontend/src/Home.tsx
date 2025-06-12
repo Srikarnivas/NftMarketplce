@@ -144,7 +144,12 @@ const Home: React.FC = () => {
         />
         <label>
           Price:
-          <input type="text" value={Number(newPrice)} onChange={(e) => setInputAppId(e.target.value)} className="border p-1 rounded" />
+          <input
+  type="number"
+  value={price.toString()}
+  onChange={(e) => setPrice(BigInt(e.target.value || "0"))}
+  className="border p-1 rounded"
+/>
         </label>
 
         <MethodCall
